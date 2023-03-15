@@ -1,5 +1,4 @@
 #include <zephyr/kernel.h>
-#include <zephyr/sys/reboot.h>
 #include <zephyr/device.h>
 #include <string.h>
 #include <zephyr/drivers/flash.h>
@@ -13,12 +12,6 @@ static struct nvs_fs fs;
 #define NVS_PARTITION			storage_partition
 #define NVS_PARTITION_DEVICE	FIXED_PARTITION_DEVICE(NVS_PARTITION)
 #define NVS_PARTITION_OFFSET	FIXED_PARTITION_OFFSET(NVS_PARTITION)
-
-/* 1000 msec = 1 sec */
-#define SLEEP_TIME      100
-/* maximum reboot counts, make high enough to trigger sector change (buffer */
-/* rotation). */
-#define MAX_REBOOT 400
 
 #define NAME_ID 1
 #define ROLE_ID 2
