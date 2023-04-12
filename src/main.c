@@ -130,4 +130,12 @@ void main(void)
 		printk("  -> Writing %s\n", brd.dt);
 		(void)nvs_write(&fs, DATETIME_ID, brd.dt, strlen(brd.dt)+1);
 	}
+
+	uint32_t zero = 0;
+	nvs_write(&fs, 6, "NA", 2);
+	nvs_write(&fs, 7, &zero, sizeof(zero));
+	nvs_write(&fs, 8, &zero, sizeof(zero));
+	nvs_write(&fs, 9, &zero, sizeof(zero));
+
+	printk("All done!");
 }
