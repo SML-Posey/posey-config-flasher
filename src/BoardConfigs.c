@@ -17,9 +17,9 @@ bool get_board_config(const uint8_t board, struct BoardConfig * config)
             };
             return true;
         
-        case brd_w8_Flox:
+        case brd_h1_Flox:
             *config = (struct BoardConfig){
-                .name = "Posey w8 Flox",
+                .name = "Posey h1 Flox",
                 .role = "watch",
                 .hw = "v8.1",
                 .sw = "1.1.0",

@@ -14,7 +14,7 @@ struct BoardConfig
 
 // w8.1/h1/r2.1 variety set
 #define brd_w8_Thistle 0
-#define brd_w8_Flox 1
+#define brd_h1_Flox 1
 #define brd_r2_Tulip 2
 #define brd_h1_Carnation 3
 
