@@ -16,7 +16,7 @@ bool get_board_config(const uint8_t board, struct BoardConfig * config)
                 .dt = "2023-02-06 15:24 EST"
             };
             return true;
-        
+
         case brd_h1_Flox:
             *config = (struct BoardConfig){
                 .name = "Posey h1 Flox",
@@ -26,7 +26,7 @@ bool get_board_config(const uint8_t board, struct BoardConfig * config)
                 .dt = "2023-02-06 15:24 EST"
             };
             return true;
-        
+
         case brd_r2_Tulip:
             *config = (struct BoardConfig){
                 .name = "Posey r2 Tulip",
@@ -36,7 +36,7 @@ bool get_board_config(const uint8_t board, struct BoardConfig * config)
                 .dt = "2023-02-06 15:24 EST"
             };
             return true;
-        
+
         case brd_h1_Carnation:
             *config = (struct BoardConfig){
                 .name = "Posey h1 Carnation",
@@ -44,6 +44,27 @@ bool get_board_config(const uint8_t board, struct BoardConfig * config)
                 .hw = "h1v8.1",
                 .sw = "1.1.0",
                 .dt = "2023-02-06 15:24 EST"
+            };
+            return true;
+
+        // w8.2 r2.2
+        case brd_r2_Indigo:
+            *config = (struct BoardConfig){
+                .name = "Posey r2 Indigo",
+                .role = "ring",
+                .hw = "r2.2",
+                .sw = "1.1.0",
+                .dt = "2023-05-24 15:24 EST"
+            };
+            return true;
+
+        case brd_h1_Aster:
+            *config = (struct BoardConfig){
+                .name = "Posey h1 Aster",
+                .role = "hub",
+                .hw = "h1v8.2",
+                .sw = "1.1.0",
+                .dt = "2023-05-24 15:24 EST"
             };
             return true;
 
