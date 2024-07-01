@@ -1,3 +1,11 @@
 # Posey Config Flasher
 
-Firmware for setting Posey config variables.
+Firmware for setting Posey device configuration variables.
+
+## Author
+
+[Anthony Wertz](https://me.anthonywertz.com)
+
+## License
+
+[MIT license](license.md)
